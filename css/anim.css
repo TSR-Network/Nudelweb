@@ -1,0 +1,57 @@
+body {
+    overflow-x: hidden;
+}
+
+.slideInLeft {
+    animation: 1s ease 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideInRight {
+    animation: 1s ease 0s 1 slideInFromRight;
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.grow {
+    animation: 1s grow;
+}
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.colorBlackHover:hover {
+    animation: colorBlack 5s forwards;
+}
+@keyframes colorBlack {
+    20% {
+        background-color: black;
+        color:red;
+    }
+    90% {
+        transform: translateY(0);
+        background-color: black;
+        color:red;
+    }
+    100% {
+        transform: translateY(-500%);
+    }
+}

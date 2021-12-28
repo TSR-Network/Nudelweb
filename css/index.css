@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,5 +71,6 @@ li:hover p {
     color: rgb(26,26,26);
     text-align: center;
     border-style: solid;
+    cursor:default;
     margin: 0% 5% 1.5% 20%;
 }
