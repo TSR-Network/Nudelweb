@@ -6,11 +6,9 @@ body {
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient(to right,	rgb(131,139,131),rgb(240,255,240),rgb(193,255,193));
 }
-
 a {
     text-decoration: none;
 }
-
 li {
     font-size: 25px;
     width: 8em;
@@ -21,11 +19,9 @@ li {
     margin-top: 0.8em;
     cursor: pointer;
 }
-
 ul {
     padding: 0;
 }
-
 p {
     position: relative;
     height: 120%;
@@ -42,6 +38,31 @@ p {
     transition: 0.3s;
 }
 
+li::before,
+li::after
+{
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+li:hover p {
+    transform: translateX(0.15em);
+}
+
 .textoption {
     display: block;
     border:none;
@@ -52,32 +73,4 @@ p {
     text-align: center;
     border-style: solid;
     margin: 0% 5% 1.5% 20%;
-}
-
-li::before,
-li::after
-{
-    content: '';
-    position: absolute;
-    width: inherit;
-    border-left: inherit;
-    z-index: -1;
-}
-
-li::before {
-    height: 80%;
-    top: 10%;
-    left: calc(-0.15em - 0.08em * 2);
-    filter: brightness(0.8);
-}
-
-li::after {
-    height: 60%;
-    top: 20%;
-    left: calc(-0.15em * 2 - 0.08em * 3);
-    filter: brightness(0.6);
-}
-
-li:hover p {
-    transform: translateX(0.15em);
 }
