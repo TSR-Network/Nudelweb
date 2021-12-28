@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(to right,	rgb(131,139,131),rgb(240,255,240),rgb(193,255,193));
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: block;
+    border:none;
+    border-radius: 4px;
+    width: 25%;
+    border-style: solid;
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+    margin: 0% 5% 1.5% 35%;
+    color: white;
+}
+
+.title {
+    color: rgb(0,0,80); 
+}
+
+.mainpage {
+    padding: 1% 5% 1% 4%;
+    margin: 0% 5% -3.5% 0%;
+}
+
+.textoption {
+    color: rgb(104,131,139);
+}
+
+#youtubeabo{
+    border-color: rgb(139,0,0);
+    background-color: Red;
+    box-shadow: 0px 0px 70px Red;
+}
+
+#twitch{
+    border-color: rgb(104,34,139);
+    background-color: purple;
+    box-shadow: 0px 0px 70px purple;
+}
+
+#mainpage{
+    border-color: 	rgb(0,100,0);
+    background-color: green;
+    box-shadow: 0px 0px 70px green;
+}
