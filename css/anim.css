@@ -46,7 +46,7 @@ body {
         background-color: black;
         color:red;
     }
-    90% {
+    50% {
         transform: translateY(0);
         background-color: black;
         color:red;
