@@ -43,13 +43,13 @@ body {
 }
 @keyframes colorBlack {
     20% {
-        background-color: black;
-        color:red;
+        background-color: 	#8b8682;
+        color:black;
     }
     50% {
         transform: translateY(0);
-        background-color: black;
-        color:red;
+        background-color: 	#8b8682;
+        color:	#e0eee0;
     }
     100% {
         transform: translateY(-500%);
